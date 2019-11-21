@@ -30,3 +30,9 @@ def FindWordCount(text_list, string_test):
                     if bad == 0:
                         count += 1
     return count
+
+def ScoreFinder(names, scores, name):
+    if name in names:
+        print("OUTPUT", name, "got a score of", scores[names.index(name)])
+    else:
+        print("OUTPUT player not found")
