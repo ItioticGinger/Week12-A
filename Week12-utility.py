@@ -8,3 +8,11 @@ def PrintOutput(output):
 def LoadFile(filename):
     with open(filename, "r") as f:
         return f.readlines()
+
+def UpdateString(string, update, num):
+    string_list = list(string)
+    string_list[num] == update
+    string_updated = ''
+    for i in string_list:
+        string_updated += i
+    return string_updated
