@@ -39,7 +39,8 @@ def ScoreFinder(names, scores, name):
 
 def Union(list1, list2):
     for i in list2:
-        list1.append(i)
+        if i not in list1:
+            list1.append(i)
     return list1
 
 def Intersection(list1, list2):
